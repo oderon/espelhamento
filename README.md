@@ -7,6 +7,8 @@ A integração é feita via API REST sobre HTTP. O sistema de destino implementa
 
 Tipicamente, a posição GPS é obtida através de um hardware instalado nos veículos, que periodicamente transmite dados para um servidor central (o servidor de *origem* neste documento). É comum que a transmissão do veículo inclua outros dados, e inclua dados de períodos inteiros (ex: "todas as posições GPS da última hora").
 
+![Diagrama 1](https://github.com/oderon/espelhamento/raw/master/img/protocolo-espelhamento.png "Diagrama 1")
+
 O servidor de origem recebe os dados de vários veículos e eventualmente decide compartilhá-los com outro servidor (o servidor *destino* neste documento). Observe que os dados que o servidor de origem compartilha podem ser filtrados (ex: apenas alguns veículos estarão configurados para espelhar) ou modificados (ex: coordenadas redundantes podem ser removidas).
 
 ## 2. Códigos de Erro e Content-Type
